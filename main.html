@@ -1,38 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DigiBuddy Main</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <meta charset="UTF-8">
+    <title>DigiBuddy - Home</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div class="circle-background">
-    <div class="circle circle1"></div>
-    <div class="circle circle2"></div>
-    <div class="circle circle3"></div>
-    <div class="circle circle4"></div>
-    <div class="circle circle5"></div>
-  </div>
+    <header>
+        <h1>Welcome to DigiBuddy!</h1>
+        <p>✨ "Where digital dreams come to life!" ✨</p>
+    </header>
 
-  <div class="content">
-    <h1>Hello, I’m DigiBuddy! 🤖</h1>
-    <p class="subtitle">Let’s explore the digital world together – safely and simply!</p>
-    <div class="cta-container">
-      <a href="#" class="cta-button">Learn Basics</a>
-      <a href="#" class="cta-button">Ask a Question</a>
-      <a href="#" class="cta-button">Get Help</a>
-    </div>
-  </div>
+    <main>
+        <section class="card">
+            <h2>Learn Basics</h2>
+            <p>Start your digital journey with easy tutorials and guides.</p>
+        </section>
 
-  <div class="chat-container">
-    <df-messenger
-      intent="WELCOME"
-      chat-title="DigiBuddy"
-      agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
-      language-code="en">
-    </df-messenger>
-  </div>
+        <section class="card">
+            <h2>Ask DigiBuddy</h2>
+            <p>Have a question? DigiBuddy is here to assist you anytime.</p>
+        </section>
+
+        <section class="card">
+            <h2>Community Help</h2>
+            <p>Connect with other learners and grow together.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>🌟 "Learning never exhausts the mind; it only ignites it!" 🌟</p>
+    </footer>
 </body>
 </html>
