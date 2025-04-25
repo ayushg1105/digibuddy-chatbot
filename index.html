@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DigiBuddy Login</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <div class="circle-background">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+    <div class="circle circle5"></div>
+  </div>
+
   <div class="login-container">
-    <div class="login-box">
-      <img src="logo.png" alt="DigiBuddy Logo" class="logo">
-    <h1>Welcome to DigiBuddy 👋</h1>
-    <p>Your friendly digital literacy assistant</p>
-    <form id="loginForm">
-      <input type="text" placeholder="Username" required><br>
-      <input type="password" placeholder="Password" required><br>
+    <h2>Welcome to DigiBuddy</h2>
+    <p>Your digital learning companion</p>
+    <form action="main.html" method="GET">
+      <input type="text" placeholder="Username" required/>
+      <input type="password" placeholder="Password" required/>
       <button type="submit">Login</button>
     </form>
   </div>
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
