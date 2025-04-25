@@ -3,17 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>DigiBuddy - Your Digital Buddy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Chatbot -->
-  <df-messenger
-    intent="WELCOME"
-    chat-title="DigiBuddy"
-    agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
-    language-code="en"
-  ></df-messenger>
+  <!-- Animated Background -->
+  <ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <div class="chat-container">
+    <!-- Chatbot -->
+    <df-messenger
+      intent="WELCOME"
+      chat-title="DigiBuddy"
+      agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
+      language-code="en"
+    ></df-messenger>
+  </div>
 
   <!-- Dialogflow Script -->
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
