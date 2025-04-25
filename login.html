@@ -2,33 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DigiBuddy Login</title>
+  <title>DigiBuddy - Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-body">
-  <div class="login-box">
+<body>
+  <div class="login-container">
     <h1>Welcome to DigiBuddy 👋</h1>
     <p>Your friendly digital literacy assistant</p>
-    <form onsubmit="return loginUser();">
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="password" placeholder="Enter Passcode" required><br>
-      <button type="submit">Enter</button>
+    <form id="loginForm">
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button type="submit">Login</button>
     </form>
   </div>
-
-  <!-- Animated Background -->
-  <ul class="circles">
-    <li></li><li></li><li></li><li></li><li></li>
-    <li></li><li></li><li></li><li></li><li></li>
-  </ul>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-
-
-  <script>
-    function loginUser() {
-      window.location.href = "index.html";
-      return false;
-    }
-  </script>
+  
+  <script src="script.js"></script>
 </body>
 </html>
