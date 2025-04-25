@@ -1,89 +1,152 @@
-/* General Styling */
-body {
+/* Global Styles */
+body, html {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
+  height: 100%;
   overflow: hidden;
+  background-color: #f0f8ff;
 }
 
-.login-body {
+/* Login Page Styles */
+.login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #282c34;
-  color: #fff;
-  flex-direction: column;
-  text-align: center;
+  background: linear-gradient(to bottom right, #6a11cb, #2575fc);
 }
 
 .login-box {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 40px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px #00bcd4;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 350px;
 }
 
-input, button {
-  margin: 10px;
+.login-box h1 {
+  color: #2575fc;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
   padding: 10px;
-  font-size: 1em;
-  width: 80%;
-  border: none;
-  border-radius: 8px;
+  margin: 10px 0;
+  border: 1px solid #2575fc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-input {
-  background: #fff;
-}
-
-button {
-  background: #00bcd4;
+.login-box button {
+  background-color: #2575fc;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
-  transition: 0.3s;
-}
-button:hover {
-  background: #008c9e;
+  width: 100%;
 }
 
-/* Animated Background */
-.circles {
-  position: fixed;
-  top: 0; left: 0;
+.login-box button:hover {
+  background-color: #6a11cb;
+}
+
+/* Main Page Styles */
+.content {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.content h1 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Chatbot Styles */
+.chat-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+/* Animated Circles Background */
+.circle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  overflow: hidden;
+  pointer-events: none; /* Avoid interfering with other elements */
 }
-.circles li {
-  position: absolute;
-  display: block;
-  list-style: none;
-  width: 20px; height: 20px;
-  background: rgba(255, 255, 255, 0.2);
-  animation: float 25s linear infinite;
-  bottom: -150px;
-  border-radius: 50%;
-}
-.circles li:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-duration: 22s; }
-.circles li:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-duration: 12s; }
-.circles li:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-duration: 18s; }
-.circles li:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-duration: 25s; }
-.circles li:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-duration: 20s; }
-.circles li:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-duration: 15s; }
-.circles li:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-duration: 12s; }
-.circles li:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-duration: 45s; }
-.circles li:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-duration: 35s; }
-.circles li:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-duration: 11s; }
 
-@keyframes float {
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  animation: circleAnimation 10s linear infinite;
+}
+
+.circle1 {
+  width: 250px;
+  height: 250px;
+  top: 20%;
+  left: 20%;
+  animation-duration: 12s;
+}
+
+.circle2 {
+  width: 200px;
+  height: 200px;
+  top: 40%;
+  left: 60%;
+  animation-duration: 16s;
+}
+
+.circle3 {
+  width: 150px;
+  height: 150px;
+  top: 70%;
+  left: 30%;
+  animation-duration: 14s;
+}
+
+.circle4 {
+  width: 180px;
+  height: 180px;
+  top: 10%;
+  left: 75%;
+  animation-duration: 18s;
+}
+
+.circle5 {
+  width: 220px;
+  height: 220px;
+  top: 50%;
+  left: 85%;
+  animation-duration: 20s;
+}
+
+@keyframes circleAnimation {
   0% {
-    transform: translateY(0) rotate(0deg);
-    opacity: 1;
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(50px, 50px);
+    opacity: 0.7;
   }
   100% {
-    transform: translateY(-1000px) rotate(720deg);
-    opacity: 0;
+    transform: translate(100px, 100px);
+    opacity: 0.3;
   }
 }
