@@ -6,26 +6,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Animated Background -->
-  <ul class="background">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-
-  <div class="chat-container">
-    <!-- Chatbot -->
-    <df-messenger
-      intent="WELCOME"
-      chat-title="DigiBuddy"
-      agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
-      language-code="en"
-    ></df-messenger>
+  <!-- Animated Circles Background -->
+  <div class="circle-background">
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+    <div class="circle circle5"></div>
   </div>
 
-  <!-- Dialogflow Script -->
+  <div class="content">
+    <h1>Welcome to DigiBuddy!</h1>
+    <div class="chat-container">
+      <!-- Chatbot -->
+      <df-messenger
+        intent="WELCOME"
+        chat-title="DigiBuddy"
+        agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
+        language-code="en"
+      ></df-messenger>
+    </div>
+  </div>
+
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
 </body>
 </html>
