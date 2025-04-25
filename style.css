@@ -41,7 +41,62 @@ body, html {
   100% { transform: translateY(0) rotate(360deg); }
 }
 
-/* Content container */
+/* Login Page */
+.login-container {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  color: #93c5fd;
+  margin-bottom: 10px;
+}
+
+.login-container p {
+  font-size: 1rem;
+  color: #e0f2fe;
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: white;
+  font-size: 1rem;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #3b82f6, #9333ea);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.login-container button:hover {
+  background: linear-gradient(to right, #2563eb, #7e22ce);
+}
+
+/* Main Page */
 .content {
   position: relative;
   z-index: 2;
@@ -66,7 +121,6 @@ body, html {
   text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
 
-/* CTA Buttons */
 .cta-container {
   display: flex;
   justify-content: center;
@@ -91,11 +145,6 @@ body, html {
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
 }
 
-.cta-button:active {
-  transform: scale(0.98);
-}
-
-/* Chatbot container */
 .chat-container {
   position: absolute;
   bottom: 10px;
@@ -106,7 +155,7 @@ body, html {
   max-width: 480px;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   .content h1 {
     font-size: 2.5rem;
@@ -119,5 +168,10 @@ body, html {
   .cta-button {
     padding: 12px 24px;
     font-size: 0.9rem;
+  }
+
+  .login-container {
+    margin-top: 60px;
+    padding: 20px;
   }
 }
