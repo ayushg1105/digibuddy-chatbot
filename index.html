@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>DigiBuddy Chatbot</title>
-    <meta charset="UTF-8" />
-  </head>
-  <body style="margin:0; padding:0;">
-    <df-messenger
-      intent="WELCOME"
-      chat-title="DigiBuddy"
-      agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
-      language-code="en"
-    ></df-messenger>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DigiBuddy - Your Digital Buddy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Chatbot -->
+  <df-messenger
+    intent="WELCOME"
+    chat-title="DigiBuddy"
+    agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
+    language-code="en"
+  ></df-messenger>
 
-    <script
-      src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"
-      defer
-    ></script>
-  </body>
+  <!-- Dialogflow Script -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
+  <script src="script.js"></script>
+</body>
 </html>
