@@ -5,28 +5,20 @@
   <title>DigiBuddy Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-body">
-  <div class="login-box">
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <img src="logo.png" alt="DigiBuddy Logo" class="logo">
     <h1>Welcome to DigiBuddy 👋</h1>
     <p>Your friendly digital literacy assistant</p>
-    <form onsubmit="return loginUser();">
-      <input type="text" placeholder="Your Name" required><br>
-      <input type="password" placeholder="Enter Passcode" required><br>
-      <button type="submit">Enter</button>
+    <form id="loginForm">
+      <input type="text" placeholder="Username" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button type="submit">Login</button>
     </form>
   </div>
+</div>
 
-  <!-- Animated Background -->
-  <ul class="circles">
-    <li></li><li></li><li></li><li></li><li></li>
-    <li></li><li></li><li></li><li></li><li></li>
-  </ul>
-
-  <script>
-    function loginUser() {
-      window.location.href = "main.html";
-      return false;
-    }
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
