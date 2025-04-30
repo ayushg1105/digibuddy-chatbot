@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback - DigiBuddy</title>
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<body>
+  <header>
+    <h1>💬 Share Your Feedback</h1>
+    <nav>
+      <a href="main.html">Home</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="main.html#chat">AI Chat</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+
+  <main>
+    <form class="feedback-form" onsubmit="alert('Thank you for your feedback!'); return false;">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Your Feedback:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
