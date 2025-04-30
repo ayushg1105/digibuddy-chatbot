@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ffd700;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background: #ffd700;
+  color: black;
+}
+
+.tutorial-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.tutorial-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.tutorial-card img {
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.tutorial-card h2 {
+  color: #ffd700;
+}
+
+.tutorial-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #fff;
+  color: #141e30;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
