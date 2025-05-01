@@ -1,35 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DigiBuddy - Home</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <title>DigiBuddy - Home</title>
+  <link rel="stylesheet" href="main.css" />
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to DigiBuddy!</h1>
-        <p>✨ "Where digital dreams come to life!" ✨</p>
-    </header>
+  <header>
+    <h1>Welcome to DigiBuddy! 🚀</h1>
+    <p>✨ "Where digital dreams come to life!" ✨</p>
+    <nav>
+      <a href="main.html">Home</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="#chat">AI Chat</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
 
-    <main>
-        <section class="card">
-            <h2>Learn Basics</h2>
-            <p>Start your digital journey with easy tutorials and guides.</p>
-        </section>
+  <main>
+    <section class="card">
+      <h2>📘 Learn Basics</h2>
+      <p>Start your journey with simple tutorials on WhatsApp, Paytm, and more.</p>
+    </section>
 
-        <section class="card">
-            <h2>Ask DigiBuddy</h2>
-            <p>Have a question? DigiBuddy is here to assist you anytime.</p>
-        </section>
+    <section class="card">
+      <h2>🤖 Ask DigiBuddy</h2>
+      <p>Need help? Chat with DigiBuddy, your digital learning companion.</p>
+    </section>
 
-        <section class="card">
-            <h2>Community Help</h2>
-            <p>Connect with other learners and grow together.</p>
-        </section>
-    </main>
+    <section class="card">
+      <h2>🌐 Community Help</h2>
+      <p>Join others like you and grow together. You're not alone!</p>
+    </section>
+  </main>
 
-    <footer>
-        <p>🌟 "Learning never exhausts the mind; it only ignites it!" 🌟</p>
-    </footer>
+  <div id="chat">
+    <df-messenger
+      intent="WELCOME"
+      chat-title="DigiBuddy"
+      agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
+      language-code="en">
+    </df-messenger>
+  </div>
+
+  <footer>
+    <p>🌟 "Learning never exhausts the mind; it only ignites it!" 🌟</p>
+  </footer>
 </body>
 </html>
