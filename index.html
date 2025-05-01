@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DigiBuddy Login</title>
-    <link rel="stylesheet" href="login.css">
+  <meta charset="UTF-8" />
+  <title>DigiBuddy - Login</title>
+  <link rel="stylesheet" href="login.css" />
 </head>
-<body>
-    <div class="login-container">
-        <h1>Welcome to <span class="highlight">DigiBuddy</span></h1>
-        <p>Your companion in digital learning 📚</p>
-        <form>
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
+<body class="login-body">
+  <div class="circles">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
 
-    <footer>
-        <p>🌟 "Empowering you to navigate the digital world with confidence!" 🌟</p>
-    </footer>
+  <div class="login-box">
+    <h1>Welcome to <span class="highlight">DigiBuddy</span></h1>
+    <p>Your digital learning companion</p>
+
+    <!-- IMPORTANT: ID used for JS redirect -->
+    <form id="loginForm">
+      <input type="text" placeholder="Username" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
