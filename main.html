@@ -4,16 +4,15 @@
   <meta charset="UTF-8" />
   <title>DigiBuddy - Home</title>
   <link rel="stylesheet" href="main.css" />
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
 </head>
 <body>
   <header>
     <h1>Welcome to DigiBuddy! 🚀</h1>
     <p>✨ "Where digital dreams come to life!" ✨</p>
-    <nav>
+    <nav class="top-nav">
       <a href="main.html">Home</a>
       <a href="tutorials.html">Tutorials</a>
-      <a href="#chat">AI Chat</a>
+      <a href="chat.html">AI Chat</a>
       <a href="feedback.html">Feedback</a>
     </nav>
   </header>
@@ -22,35 +21,21 @@
     <section class="card">
       <h2>📘 Learn Basics</h2>
       <p>Start your journey with simple tutorials on WhatsApp, Paytm, and more.</p>
-      <button id="btn-tutorials">Go to Tutorials</button>
     </section>
 
     <section class="card">
       <h2>🤖 Ask DigiBuddy</h2>
       <p>Need help? Chat with DigiBuddy, your digital learning companion.</p>
-      <button onclick="document.getElementById('chat').scrollIntoView({behavior:'smooth'})">Open Chat</button>
     </section>
 
     <section class="card">
       <h2>💬 Share Feedback</h2>
       <p>Your thoughts matter. Let us know how we can help more.</p>
-      <button id="btn-feedback">Give Feedback</button>
     </section>
   </main>
-
-  <div id="chat">
-    <df-messenger
-      intent="WELCOME"
-      chat-title="DigiBuddy"
-      agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
-      language-code="en">
-    </df-messenger>
-  </div>
 
   <footer>
     <p>🌟 "Learning never exhausts the mind; it only ignites it!" 🌟</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
