@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>DigiBuddy - AI Chat</title>
   <link rel="stylesheet" href="chat.css" />
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
 </head>
 <body>
   <header>
-    <h1>🤖 Talk to DigiBuddy</h1>
-    <nav class="top-nav">
-      <a href="main.html">Home</a>
-      <a href="tutorials.html">Tutorials</a>
-      <a href="chat.html">AI Chat</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+    <div class="navbar">
+      <div class="logo">🤖 DigiBuddy</div>
+      <nav>
+        <a href="main.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="chat.html">AI Chat</a>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <p class="subtitle">Ask me anything about digital tools — I’m here to help!</p>
-    <df-messenger
-      intent="WELCOME"
-      chat-title="DigiBuddy"
-      agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
-      language-code="en">
-    </df-messenger>
+    <h1 class="page-title">Talk to DigiBuddy</h1>
+    <p class="subtitle">Ask anything about digital tools – I'm always here to help!</p>
+
+    <div class="chat-card">
+      <df-messenger
+        intent="WELCOME"
+        chat-title="DigiBuddy"
+        agent-id="5f372ea2-75fb-4028-bb6e-efeafe352f84"
+        language-code="en">
+      </df-messenger>
+    </div>
   </main>
 </body>
 </html>
