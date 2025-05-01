@@ -1,51 +1,71 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-header {
-  text-align: center;
-  padding: 40px 20px 10px;
-}
-
-header h1 {
-  font-size: 2.2rem;
-  color: #ffd700;
-}
-
-.top-nav {
-  margin-top: 10px;
-}
-
-.top-nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-weight: bold;
-}
-
-.top-nav a:hover {
-  background: #ffd700;
-  color: black;
-}
-
-.subtitle {
-  text-align: center;
-  font-size: 1.2rem;
-  margin: 20px 0;
-}
-
-df-messenger {
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  z-index: 9999;
-}
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffd700;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
+  }
+  
+  nav a:hover {
+    background: #ffd700;
+    color: black;
+  }
+  
+  main {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .page-title {
+    font-size: 2.5rem;
+    color: #ffd700;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0 40px;
+  }
+  
+  .chat-card {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+  }
+  
+  df-messenger {
+    width: 100%;
+    min-height: 400px;
+  }
+  
